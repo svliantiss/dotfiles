@@ -1,13 +1,19 @@
 # Vars
 	HISTFILE=~/.zsh_history
-	SAVEHIST=1000 
+	SAVEHIST=10000 
 	setopt inc_append_history # To save every command before it is executed 
 	setopt share_history # setopt inc_append_history
 
 	git config --global push.default current
+# Pure theme
+	autoload -U promptinit; promptinit
 
+	## optionally define some options
+	PURE_CMD_MAX_EXEC_TIME=10
+
+	prompt pure
 # Aliases
-	alias v="vim -p"
+	alias vim="nvim"
 	mkdir -p /tmp/log
 	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
@@ -82,5 +88,9 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
 	bindkey "${terminfo[kcud1]}" down-line-or-beginning-search
 fi
 
-source ~/dotfiles/zsh/prompt.sh
+source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/pure.zsh
+source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/async.zsh
+source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/prompt_pure_setup
+source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/async
+
 export PATH=$PATH:$HOME/dotfiles/utils

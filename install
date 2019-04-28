@@ -71,9 +71,17 @@ fi
 
 check_for_software zsh
 echo 
-check_for_software nvim
+check_for_software neovim
 echo
 check_for_software tmux
+echo
+check_for_software curl
+echo
+check_for_software wget
+echo
+check_for_software npm
+echo
+check_for_software neofetch
 echo
 
 check_default_shell
