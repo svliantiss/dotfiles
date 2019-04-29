@@ -6,7 +6,7 @@
 
 	git config --global push.default current
 # Pure theme
-	autoload -U promptinit; 
+	autoload -U promptinit;
 	promptinit prompt pure
 # Aliases
 	alias vim="nvim"
