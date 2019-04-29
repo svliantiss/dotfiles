@@ -5,7 +5,7 @@ target="_blank"><br><img width="200" src="https://absolum.nl/assets/images/absol
 <h1 align="center">Dotfiles</h1>
 
 
-<p align="center">A easy to edit dotfiles setup, with a install script.</p>
+<p align="center">easy to edit dotfiles setup, with an install script.</p>
 
 <img align="center" src="screenshot-of-tmux.png" alt="tmux"/>
 
