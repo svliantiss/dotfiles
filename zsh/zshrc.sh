@@ -56,10 +56,6 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 
 autoload -U compinit
 
-plugins=(
-	docker
-)
-
 for plugin ($plugins); do
     fpath=(~/dotfiles/zsh/plugins/oh-my-zsh/plugins/$plugin $fpath)
 done
@@ -90,7 +86,5 @@ fi
 
 source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/pure.zsh
 source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/async.zsh
-source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/prompt_pure_setup
-source ~/dotfiles/zsh/plugins/oh-my-zsh/lib/async
 
 export PATH=$PATH:$HOME/dotfiles/utils
