@@ -818,7 +818,9 @@ Plug 'vim-syntastic/syntastic'
 call plug#end()
 
 " Colorscheme and final setup {{{
-    syntax on
+    set guifont=DroidSansMono\ Nerd\ Font\ 11
+    set guifont=DroidSansMono\ Nerd\ Font:h11
+	syntax on
     filetype plugin indent on
     " make the highlighting of tabs and other non-text less annoying
     highlight SpecialKey ctermfg=19 guifg=#333333
