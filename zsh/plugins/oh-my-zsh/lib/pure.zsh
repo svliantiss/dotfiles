@@ -576,7 +576,7 @@ prompt_pure_setup() {
 
 	autoload -Uz add-zsh-hook
 	autoload -Uz vcs_info
-	autoload -Uz async && async
+	# autoload -Uz async && async
 
 	# The add-zle-hook-widget function is not guaranteed
 	# to be available, it was added in Zsh 5.3.
