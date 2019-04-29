@@ -17,7 +17,7 @@ target="_blank"><br><img width="200" src="https://absolum.nl/assets/images/absol
 
 ## Warning
 - Back-up your files if your not familiar with dotfile setups, the installation will do that for you.
-- IT DOES NOT WORK ON WINDOWS (ONLY WSL)
+- It only works on Unix based operating systems, if you want to use it on windows use Windows Subsystem for Linux (WSL).
 - I do not deliver any type of support for these files, so if something breaks it's your own problem.
 
 ## Install
@@ -28,6 +28,23 @@ target="_blank"><br><img width="200" src="https://absolum.nl/assets/images/absol
 3. Install the dotfiles
    ```./install```
 4. Follow the intructions and your done!
+
+## Key Features
+#### ZSH
+- oh-my-zsh
+- zsh-autocomplete
+- automatic ls afer cd (super handy)
+- ZSH Pure theme
+#### NeoVim
+- Startify
+- Tab suggestions
+- Fuzzy finder
+- Snazzy theme
+#### Tmux
+- Tmux Resurrect
+- Costum Tmux theme
+- Vim Mode
+- Vim like shortcuts (Host + HJKL for moving splits, Creating splits with Host + - or |)
 
 ## Editing
 - I recommend making a Unix based VM and use snapshots to test and edit your own builds.
