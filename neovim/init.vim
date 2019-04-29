@@ -814,7 +814,6 @@ Plug 'valloric/youcompleteme'
     Plug 'fatih/vim-go', { 'for': 'go' }
     Plug 'timcharper/textile.vim', { 'for': 'textile' }
     Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
-    Plug 'ekalinin/Dockerfile.vim'
 " }}}
 
 call plug#end()
