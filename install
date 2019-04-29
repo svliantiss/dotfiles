@@ -51,7 +51,7 @@ check_default_shell() {
 }
 
 echo "We're going to do the following:"
-echo "1. Check to make sure you have zsh, vim, and tmux installed"
+echo "1. Check to make sure you have all your programs installed installed"
 echo "2. We'll help you install them if you don't"
 echo "3. We're going to check to see if your default shell is zsh"
 echo "4. We'll try to change it if it's not" 
@@ -68,7 +68,14 @@ else
 	exit 0
 fi
 
-
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+echo
+sudo apt update
+echo
+sudo apt upgrade
+echo
+sudo apt autoremove
+echo
 check_for_software zsh
 echo 
 check_for_software neovim
@@ -79,9 +86,20 @@ check_for_software curl
 echo
 check_for_software wget
 echo
-check_for_software npm
+check_for_software nodejs
 echo
 check_for_software neofetch
+echo
+check_for_software xclip
+echo
+git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/plugins/tpm
+echo
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+echo
+mkdir ~/.config/nvim
+touch ~/.config/nvim/init.vim
+cat so ~/dotfiles/neovim/init.vim >> ~/.config/nvim/init.vim
 echo
 
 check_default_shell
