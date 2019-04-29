@@ -74,6 +74,10 @@ sudo apt upgrade
 echo
 sudo apt autoremove
 echo
+sudo pacman -Syuu
+echo
+brew update
+echo
 check_for_software zsh
 echo 
 check_for_software neovim
@@ -92,14 +96,13 @@ check_for_software neofetch
 echo
 check_for_software xclip
 echo
-git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/plugins/tpm
+sudo git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/plugins/tpm
 echo
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+sudo curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 echo
-mkdir ~/.config/nvim
-touch ~/.config/nvim/init.vim
-cat so ~/dotfiles/neovim/init.vim >> ~/.config/nvim/init.vim
+sudo mkdir ~/.config/nvim
+sudo touch ~/.config/nvim/init.vim
 echo
 
 check_default_shell
@@ -121,6 +124,8 @@ fi
 printf "source '$HOME/dotfiles/zsh/zshrc_manager.sh'" > ~/.zshrc
 printf "so $HOME/dotfiles/vim/vimrc.vim" > ~/.vimrc
 printf "source-file $HOME/dotfiles/tmux/tmux.conf" > ~/.tmux.conf
+sudo printf "so ~/dotfiles/neovim/init.vim" > ~/.config/nvim/init.vim
 
 echo
 echo "Please log out and log back in for default shell to be initialized."
+echo "Don't forget to update tmux package manger and Vim-Plug."
