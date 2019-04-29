@@ -10,7 +10,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'vim-syntastic/syntastic'
-Plug 'valloric/youcompleteme'
 " General {{{
     " Abbreviations
     abbr funciton function
