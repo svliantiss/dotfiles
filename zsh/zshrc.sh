@@ -6,8 +6,8 @@
 
 	git config --global push.default current
 # Pure theme
-	autoload -U promptinit; promptinit
-	prompt pure
+	autoload -U promptinit; 
+	promptinit prompt pure
 # Aliases
 	alias vim="nvim"
 	mkdir -p /tmp/log
