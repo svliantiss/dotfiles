@@ -68,8 +68,6 @@ else
 	exit 0
 fi
 
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-echo
 sudo apt update
 echo
 sudo apt upgrade
@@ -83,6 +81,8 @@ echo
 check_for_software tmux
 echo
 check_for_software curl
+echo
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 echo
 check_for_software wget
 echo
