@@ -7,7 +7,7 @@ target="_blank"><br><img width="200" src="https://absolum.nl/assets/images/absol
 
 <p align="center">A easy to edit dotfiles setup, with a install script.</p>
 
-<img src="screenshot-of-standard-setup.png" alt="drawing" width="400"/> <img src="screenshot-of-tmux.png" alt="drawing" width="400"/> <img src="screenshot-of-vim.png" alt="drawing" width="400"/>
+<img src="screenshot-of-standard-setup.png" alt="drawing" width="800"/> <img src="screenshot-of-tmux.png" alt="drawing" width="800"/> <img src="screenshot-of-vim.png" alt="drawing" width="800"/>
 
 ## Tags
 - :page_facing_up: Template
