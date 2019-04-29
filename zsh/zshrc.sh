@@ -7,10 +7,6 @@
 	git config --global push.default current
 # Pure theme
 	autoload -U promptinit; promptinit
-
-	## optionally define some options
-	PURE_CMD_MAX_EXEC_TIME=10
-
 	prompt pure
 # Aliases
 	alias vim="nvim"
@@ -20,7 +16,7 @@
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
 
 # Settings
-	export VISUAL=vim
+	export VISUAL=nvim
 
 source ~/dotfiles/zsh/plugins/fixls.zsh
 
