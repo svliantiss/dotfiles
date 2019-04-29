@@ -7,6 +7,7 @@ target="_blank"><br><img width="200" src="https://absolum.nl/assets/images/absol
 
 <p align="center">A easy to edit dotfiles setup, with a install script.</p>
 
+<img src="screenshot-of-normal-setup.png" alt="drawing" width="200"/>
 ![screenshot of normal setup](screenshot-of-normal-setup.png =250)
 ![screenshot of tmux](screenshot-of-tmux.png =250)
 ![screenshot of vim](screenshot-of-vim.png =250)
