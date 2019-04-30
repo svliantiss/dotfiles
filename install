@@ -90,6 +90,8 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 echo
 check_for_software wget
 echo
+check_for_software xdg-utils
+echo
 check_for_software nodejs
 echo
 check_for_software neofetch
