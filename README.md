@@ -50,6 +50,13 @@ target="_blank"><br><img width="200" src="https://absolum.nl/assets/images/absol
 - I recommend making a Unix based VM and use snapshots to test and edit your own builds.
 - All the files are easy to follow and edit, if you use the method I recommended there shouldn't be any problems.
 
+## Issues
+- For some reason after installing the extensions via :PlugInstall & Host+I. Git seems to want to add everything into a
+  .gitmodules file giving the fatal path is not known for this submodule error, this can be safely ignored if you want
+  the error to go away you can use ```git rm -r --cache . -f``` to remove the message.
+- Icons might not be working, this is a known issue with devicons, make sure you have NERD font installed (I recommend
+  Droid Sans Mono NF), I will update the repository with a fix if there is one.
+
 # Pictures
 <img align="center" src="screenshot-of-standard-setup.png" alt="standard"/>
 <img align="center" src="screenshot-of-vim.png" alt="vim"/>
