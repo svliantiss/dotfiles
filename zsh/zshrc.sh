@@ -3,8 +3,8 @@
 	SAVEHIST=10000 
 	setopt inc_append_history # To save every command before it is executed 
 	setopt share_history # setopt inc_append_history
-
-	git config --global push.default current
+	export LANG=en_US.UTF-8
+        git config --global push.default current
 # Pure theme
 	autoload -U promptinit;
 	promptinit prompt pure
