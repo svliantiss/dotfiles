@@ -1,6 +1,6 @@
 # Vars
 	HISTFILE=~/.zsh_history
-	SAVEHIST=10000 
+	SAVEHIST=20000 
 	setopt inc_append_history # To save every command before it is executed 
 	setopt share_history # setopt inc_append_history
 	export LANG=en_US.UTF-8
@@ -10,6 +10,9 @@
 	promptinit prompt pure
 # Aliases
 	alias vim="nvim"
+	alias grep="grep --color -i"
+
+	export GREP_COLOR=31
 	mkdir -p /tmp/log
 	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
