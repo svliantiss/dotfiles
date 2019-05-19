@@ -124,9 +124,9 @@ else
 fi
 
 printf "source '$HOME/dotfiles/zsh/zshrc_manager.sh'" > ~/.zshrc
-printf "so $HOME/dotfiles/vim/vimrc.vim" > ~/.vimrc
+printf "source ~/dotfiles/neovim/init.vim" > ~/.vimrc
 printf "source-file $HOME/dotfiles/tmux/tmux.conf" > ~/.tmux.conf
-sudo printf "so ~/dotfiles/neovim/init.vim" > ~/.config/nvim/init.vim
+sudo printf "source ~/dotfiles/neovim/init.vim" > ~/.config/nvim/init.vim
 
 echo
 echo "Please log out and log back in for default shell to be initialized."

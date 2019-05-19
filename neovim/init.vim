@@ -59,6 +59,7 @@ Plug 'vim-syntastic/syntastic'
 
 " Appearance {{{
     set number " show line numbers
+    set lazyredraw "speeds up macro speed and scrolling"
     set wrap " turn on line wrapping
     set wrapmargin=8 " wrap lines when coming within n characters from side
     set linebreak " set soft wrapping
