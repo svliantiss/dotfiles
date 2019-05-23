@@ -8,6 +8,13 @@
 	autoload -U promptinit;
 	promptinit prompt pure
 # Aliases
+	alias wget='wget -c'
+	alias untar='tar -zxvf '
+	alias getpass="openssl rand -base64 64"
+	alias ping='ping -c 5'
+	alias ipe='curl ipinfo.io/ip'
+	alias ipi='ipconfig getifaddr en0'
+	alias gac="git add . && git commit -a -m "
 	alias vim="nvim"
 	alias grep="grep --color -i"
 	mkdir -p /tmp/log
