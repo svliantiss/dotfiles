@@ -3,6 +3,7 @@
 
 " ensure vim-plug is installed and then load it
 call plug#begin('~/dotfiles/neovim/plugged')
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'connorholyday/vim-snazzy'
 Plug 'tpope/vim-sensible'
 Plug '/usr/local/opt/fzf'
