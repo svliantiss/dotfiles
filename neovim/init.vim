@@ -47,7 +47,7 @@ Plug 'vim-syntastic/syntastic'
     set smartcase " case-sensitive if expresson contains a capital letter
     set hlsearch " highlight search results
     set incsearch " set incremental search, like modern browsers
-    set nolazyredraw " don't redraw while executing macros
+    set lazyredraw " don't redraw while executing macros
 
     set magic " Set magic on, for regex
 
@@ -123,10 +123,6 @@ Plug 'vim-syntastic/syntastic'
 
     " highlight conflicts
     match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
-
-    " Load colorschemes
-    Plug 'chriskempson/base16-vim'
-    Plug 'joshdick/onedark.vim'
 
     " LightLine {{{
         Plug 'itchyny/lightline.vim'
