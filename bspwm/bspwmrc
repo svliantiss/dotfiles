@@ -4,7 +4,7 @@ sxhkd &
 compton -b &
 dunst &
 xinput set-button-map 11 1 2 3 5 4 6 7 &
-feh --bg-center $HOME/Pictures/background.png &
+feh --bg-fill $HOME/Pictures/background.png &
 $HOME/.config/polybar/launch.sh &
 $HOME/.config/polybar/scripts/spotify/launchlistener.sh &
 bspc monitor -d I II III IV V VI VII VIII IX X
