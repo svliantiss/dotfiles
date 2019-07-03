@@ -74,7 +74,7 @@ sudo apt upgrade
 echo
 sudo apt autoremove
 echo
-sudo pacman -Syuu
+sudo pacman -Syyu
 echo
 brew update
 echo
@@ -97,6 +97,8 @@ echo
 check_for_software neofetch
 echo
 check_for_software xclip
+echo
+check_for_software npm
 echo
 git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/plugins/tpm
 echo
@@ -121,6 +123,28 @@ if echo "$answer" | grep -iq "^y" ;then
 	mv ~/.vimrc ~/.vimrc.old
 else
 	echo -e "\nNot backing up old dotfiles."
+fi
+
+echo
+echo -n "Would you like to use my BSPWM Polybar config? (y/n) "
+old_stty_cfg=$(stty -g)
+stty raw -echo
+answer=$( while ! head -c 1 | grep -i '[ny]' ;do true ;done )
+stty $old_stty_cfg
+if echo "$answer" | grep -iq "^y" ;then
+	check_for_software polybar
+	printf "#!/usr/bin/env bash" > ~/.config/polybar/launch.sh
+	echo "# Terminae already running bar instances" >> ~/.config/polybar/launch.sh
+	echo "killall -q polybar" >> ~/.config/polybar/launch.sh
+	echo "# Wait until the processes have been shut down" >> ~/.config/polybar/launch.sh
+	echo "while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done" >> ~/.config/polybar/launch.sh
+
+	echo "polybar -c ~/dotfiles/polybar/config top &" >> ~/.config/polybar/launch.sh¬
+	echo "polybar -c ~/dotfiles/polybar/config bottom &" >> ~/.config/polybar/launch.sh
+	echo "polybar -c ~/dotfiles/polybar/config top2 &" >> ~/.config/polybar/launch.sh¬
+	echo "polybar -c ~/dotfiles/polybar/config bottom2" >> ~/.config/polybar/launch.sh¬
+else
+	echo -e "\nNot installing polybar config."
 fi
 
 printf "source '$HOME/dotfiles/zsh/zshrc_manager.sh'" > ~/.zshrc
