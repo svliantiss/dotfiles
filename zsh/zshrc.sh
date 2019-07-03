@@ -15,7 +15,7 @@
 	alias ipe='curl ipinfo.io/ip'
 	alias ipi='ipconfig getifaddr en0'
 	alias gac="git add . && git commit -a -m "
-	alias vim="nvim"
+	alias vim="vim"
 	alias killd="docker kill $(docker ps -q)"
 	alias rmd="docker rm $(docker ps -a -q)"
 	alias rmid="docker rmi $(docker images -q)"
