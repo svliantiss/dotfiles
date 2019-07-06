@@ -20,6 +20,7 @@
 	alias rmd="docker rm $(docker ps -a -q)"
 	alias rmid="docker rmi $(docker images -q)"
 	alias grep="grep --color -i"
+	alias open="xdg-open"
 	mkdir -p /tmp/log
 	
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)

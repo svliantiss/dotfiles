@@ -139,17 +139,17 @@ label-empty-padding = 2
 label-empty-foreground = #ff6a6aD5
 
 label-occupied =%icon%
-label-occupied-padding = 1
+label-occupied-padding = 2
 label-occupied-underline = ${colors.white2}
 
 label-focused =%icon%
 label-focused-foreground = ${colors.dullblue}
-label-focused-padding = 1
+label-focused-padding = 2
 label-focused-underline = ${colors.dullblue}
 
 label-urgent =%icon%!
 label-urgent-background = ${colors.mred}
-label-urgent-padding = 1
+label-urgent-padding = 2
 
 [module/cpu]
 type = internal/cpu
