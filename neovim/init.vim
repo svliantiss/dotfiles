@@ -64,7 +64,6 @@ Plug 'vim-syntastic/syntastic'
     set wrap " turn on line wrapping
     set wrapmargin=8 " wrap lines when coming within n characters from side
     set linebreak " set soft wrapping
-    set showbreak=… " show ellipsis at breaking
     set autoindent " automatically set indent of new line
     set ttyfast " faster redrawing
     set diffopt+=vertical
@@ -95,11 +94,6 @@ Plug 'vim-syntastic/syntastic'
     set foldnestmax=10 " deepest fold is 10 levels
     set nofoldenable " don't fold by default
     set foldlevel=1
-
-    " toggle invisible characters
-    set list
-    set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
-    set showbreak=↪
 
     set t_Co=256 " Explicitly tell vim that the terminal supports 256 colors
     " switch cursor to line when in insert mode, and block when not
