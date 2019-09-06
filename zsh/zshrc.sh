@@ -31,6 +31,7 @@
 	export VISUAL=nvim
 	export EDITOR=nvim
 	export GREP_COLOR=31
+	export PATH="$PATH:/Users/svl/projects/flutter/bin"
 
 source ~/dotfiles/zsh/plugins/fixls.zsh
 
