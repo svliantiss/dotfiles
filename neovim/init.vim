@@ -11,6 +11,8 @@ call plug#begin('~/dotfiles/neovim/plugged')
  Plug 'scrooloose/nerdtree'
  Plug 'tpope/vim-surround'
  Plug 'vim-syntastic/syntastic'
+ Plug 'dart-lang/dart-vim-plugin'
+ Plug 'thosakwe/vim-flutter'
  " General {{{
      " Abbreviations
      abbr funciton function
@@ -48,7 +50,7 @@ call plug#begin('~/dotfiles/neovim/plugged')
      set hlsearch " highlight search results
      set incsearch " set incremental search, like modern browsers
      set lazyredraw " don't redraw while executing macros
- 
+     set paste 
      set magic " Set magic on, for regex
  
      " error bells
@@ -60,13 +62,11 @@ call plug#begin('~/dotfiles/neovim/plugged')
  
  " Appearance {{{
      set number " show line numbers
-     set lazyredraw "speeds up macro speed and scrolling"
      set wrap " turn on line wrapping
-     set wrapmargin=10 " wrap lines when coming within n characters from side
+     set wrapmargin=15 " wrap lines when coming within n characters from side
      set linebreak " set soft wrapping
      set autoindent " automatically set indent of new line
      set ttyfast " faster redrawing
-     set diffopt+=vertical
      set laststatus=2 " show the satus line all the time
      set so=7 " set 7 lines to the cursors - when moving vertical
      set wildmenu " enhanced command line completion
@@ -208,16 +208,16 @@ call plug#begin('~/dotfiles/neovim/plugged')
          " let NERDTreeDirArrowExpandable = 'â–·'
          " let NERDTreeDirArrowCollapsible = 'â–¼'
          let g:NERDTreeIndicatorMapCustom = {
-         \ "Modified"  : "¹",
-         \ "Staged"    : "",
-         \ "Untracked" : "­",
-         \ "Renamed"   : "",
-         \ "Unmerged"  : "",
-         \ "Deleted"   : "",
-         \ "Dirty"     : "",
-         \ "Clean"     : "",
-         \ 'Ignored'   : '',
-         \ "Unknown"   : "?"
+         \ "Modified"  : "¿",
+         \ "Staged"    : "¿",
+         \ "Untracked" : "¿¿",
+         \ "Renamed"   : "¿",
+         \ "Unmerged"  : "¿",
+         \ "Deleted"   : "¿",
+         \ "Dirty"     : "¿¿",
+         \ "Clean"     : "¿",
+         \ 'Ignored'   : '¿',
+         \ "Unknown"   : "¿"
          \ }
  
  call plug#end()
