@@ -3,7 +3,7 @@
 	SAVEHIST=20000 
 	setopt inc_append_history # To save every command before it is executed 
 	setopt share_history # setopt inc_append_history
-        git config --global push.default current
+	git config --global push.default current
 # Pure theme
 	autoload -U promptinit;
 	promptinit prompt pure
@@ -16,19 +16,35 @@
 	alias ipi='ipconfig getifaddr en0'
 	alias gac="git add . && git commit -a -m "
 	alias vim="vim"
-	alias killd="docker kill $(docker ps -q)"
-	alias rmd="docker rm $(docker ps -a -q)"
-	alias rmid="docker rmi $(docker images -q)"
+	alias dcu="docker-compose up --build -d"
+	alias dcd="docker-compose down"
+	alias dex="dex-fn"
+	alias dsc="dsc-fn"
+	alias drmc="drmc-fn"
+	alias drmi="drmi-fn"
 	alias grep="grep --color -i"
 	mkdir -p /tmp/log
-	
+
+function dex-fn {
+    docker exec -it $1 /bin/bash
+}
+
+function drmi-fn {
+	docker rmi $(docker images -q)
+}
+
+function drmc-fn {
+    docker rm $(docker ps -aq)
+}
+
+function dsc-fn {
+    docker stop $(docker ps -aq)
+}
 	# This is currently causing problems (fails when you run it anywhere that isn't a git project's root directory)
 	# alias vs="v `git status --porcelain | sed -ne 's/^ M //p'`"
 
 # Settings
 	export LANG=en_US.UTF-8
-	export VISUAL=nvim
-	export EDITOR=nvim
 	export GREP_COLOR=31
 	export PATH="$PATH:/Users/svl/projects/flutter/bin"
 
